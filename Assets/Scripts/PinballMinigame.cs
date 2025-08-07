@@ -54,8 +54,10 @@ public class PinballMinigame : MonoBehaviour
 
     public void Release()
     {
+        // Disable the triggers while we shooting
+        foreach (var trigger in Triggers) { trigger.SetEnabled(false); }
+
         Canon.ShootBall(BallCount);
-        SetBallCount(1);
     }
 
     public void DoubleBallCount()
