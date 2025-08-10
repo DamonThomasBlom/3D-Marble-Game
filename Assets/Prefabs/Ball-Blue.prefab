@@ -51,9 +51,21 @@ PrefabInstance:
     - target: {fileID: 3496917442929361053, guid: bc67828338b433345aa44af8ccfb0264, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 62743654036f4454ba05d7ab6364fc92, type: 2}
+      objectReference: {fileID: 2100000, guid: f521733a0361f244da8637f207b7417b, type: 2}
     - target: {fileID: 4048877513960394603, guid: bc67828338b433345aa44af8ccfb0264, type: 3}
       propertyPath: TeamColour
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224908451279227664, guid: bc67828338b433345aa44af8ccfb0264, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.8196079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224908451279227664, guid: bc67828338b433345aa44af8ccfb0264, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.7019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 6224908451279227664, guid: bc67828338b433345aa44af8ccfb0264, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715597389171072238, guid: bc67828338b433345aa44af8ccfb0264, type: 3}

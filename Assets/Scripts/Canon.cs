@@ -55,8 +55,11 @@ public class Canon : MonoBehaviour
             );
 
             Vector3 shootDirection = (BallSpawnPoint.transform.forward + randomOffset).normalized;
+            
+            var rb = ball.GetComponent<Rigidbody>();
 
-            ball.GetComponent<Rigidbody>().AddForce(shootDirection * ShootSpeed, ForceMode.Impulse);
+            rb.linearVelocity = Vector3.zero; // Reset balls velocity before shooting
+            rb.AddForce(shootDirection * ShootSpeed, ForceMode.Impulse);
 
             ballcount--;
             PinballGame.SetBallCount(ballcount);
