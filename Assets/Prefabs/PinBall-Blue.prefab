@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 3496917442929361053, guid: 8c1ceb7f5d1c8de47a7d2e5685660749, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 62743654036f4454ba05d7ab6364fc92, type: 2}
+      objectReference: {fileID: 2100000, guid: f521733a0361f244da8637f207b7417b, type: 2}
     - target: {fileID: 6715597389171072238, guid: 8c1ceb7f5d1c8de47a7d2e5685660749, type: 3}
       propertyPath: m_Name
       value: PinBall-Blue

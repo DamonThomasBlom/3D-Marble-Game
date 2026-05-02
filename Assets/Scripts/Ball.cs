@@ -46,7 +46,16 @@ public class Ball : MonoBehaviour
             if (gridCell.TeamColour != this.TeamColour)
             {
                 gridCell.SetTileColour(this.TeamColour);
+                _rigidBody.linearVelocity = Vector3.zero;
                 Pooler.ReturnToPool(gameObject);
+            }
+        }
+        var canon = other.GetComponent<Canon>();
+        if (canon != null)
+        {
+            if (canon != this.Canon)
+            {
+                canon.Die();
             }
         }
     }

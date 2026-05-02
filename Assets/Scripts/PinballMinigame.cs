@@ -77,14 +77,17 @@ public class PinballMinigame : MonoBehaviour
             NumberOfBallsText.text = count.ToString();
 
         // Re-enable the triggers
-        if (count == 1)
+        if (count == 1 && !dead)
             foreach(var trigger in Triggers) { trigger.SetEnabled(true); }
         //if (BallCount > 1000)
         //    Release();
     }
 
+    bool dead;
+
     public void Die()
     {
+        dead = true;
         foreach (var slot in Triggers) { slot.SetEnabled(false); }
     }
 }
